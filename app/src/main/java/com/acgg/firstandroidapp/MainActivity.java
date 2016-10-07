@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUPActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -57,6 +58,7 @@ public class MainActivity extends Activity {
                     Toast.makeText(MainActivity.this, "Successfully logged in.", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(getApplicationContext(), TouchListenerActivity.class);
                     startActivity(intent);
+                    finish();
 
                 }
 

@@ -56,10 +56,10 @@ public class TouchListenerActivity extends AppCompatActivity {
             TextView motion = (TextView)findViewById(R.id.motion);
             motion.setText("");
 
-            TextView diff = (TextView)findViewById(R.id.dxyIn);
+            TextView diff = (TextView)findViewById(R.id.dX);
             diff.setText("");
 
-            TextView diff2 = (TextView)findViewById(R.id.dxyFi);
+            TextView diff2 = (TextView)findViewById(R.id.dY);
             diff2.setText("");
         }
 
@@ -67,10 +67,10 @@ public class TouchListenerActivity extends AppCompatActivity {
             TextView motion = (TextView)findViewById(R.id.motion);
             motion.setText("");
 
-            TextView diff = (TextView)findViewById(R.id.dxyIn);
+            TextView diff = (TextView)findViewById(R.id.dX);
             diff.setText("");
 
-            TextView diff2 = (TextView)findViewById(R.id.dxyFi);
+            TextView diff2 = (TextView)findViewById(R.id.dY);
             diff2.setText("");
         }
 
@@ -78,10 +78,10 @@ public class TouchListenerActivity extends AppCompatActivity {
             TextView motion = (TextView)findViewById(R.id.motion);
             motion.setText("");
 
-            TextView diff = (TextView)findViewById(R.id.dxyIn);
+            TextView diff = (TextView)findViewById(R.id.dX);
             diff.setText("");
 
-            TextView diff2 = (TextView)findViewById(R.id.dxyFi);
+            TextView diff2 = (TextView)findViewById(R.id.dY);
             diff2.setText("");
         }
 
@@ -89,15 +89,15 @@ public class TouchListenerActivity extends AppCompatActivity {
             TextView motion = (TextView)findViewById(R.id.motion);
             motion.setText("");
 
-            TextView diff = (TextView)findViewById(R.id.dxyIn);
+            TextView diff = (TextView)findViewById(R.id.dX);
             diff.setText("");
 
-            TextView diff2 = (TextView)findViewById(R.id.dxyFi);
+            TextView diff2 = (TextView)findViewById(R.id.dY);
             diff2.setText("");
         }
 
         if(initX<finalX & (initX<finalX & initY<finalY)){
-            TextView difffiX = (TextView)findViewById(R.id.dxyFi);
+            TextView difffiX = (TextView)findViewById(R.id.dX);
             String txt= Float.toString(diffFiX);
             difffiX.setText(txt);
 
@@ -106,7 +106,7 @@ public class TouchListenerActivity extends AppCompatActivity {
         }
 
         else if(initX<finalX & (initX<finalX & initY>finalY)){
-            TextView difffiX = (TextView)findViewById(R.id.dxyFi);
+            TextView difffiX = (TextView)findViewById(R.id.dX);
             String txt= Float.toString(diffFiX);
             difffiX.setText(txt);
             TextView motion = (TextView)findViewById(R.id.motion);
@@ -115,7 +115,7 @@ public class TouchListenerActivity extends AppCompatActivity {
 
         else if(initX>finalX & (initX>finalX & initY<finalY))
         {
-            TextView diffinX = (TextView)findViewById(R.id.dxyIn);
+            TextView diffinX = (TextView)findViewById(R.id.dX);
             String txt= Float.toString(diffInX);
             diffinX.setText(txt);
 
@@ -125,7 +125,7 @@ public class TouchListenerActivity extends AppCompatActivity {
 
         else if(initX>finalX & (initX>finalX & initY>finalY))
         {
-            TextView diffinX = (TextView)findViewById(R.id.dxyIn);
+            TextView diffinX = (TextView)findViewById(R.id.dX);
             String txt= Float.toString(diffInX);
             diffinX.setText(txt);
 
@@ -134,14 +134,14 @@ public class TouchListenerActivity extends AppCompatActivity {
         }
 
         if(initY<finalY){
-            TextView difffiY = (TextView)findViewById(R.id.dxyFi);
+            TextView difffiY = (TextView)findViewById(R.id.dY);
             String txt= Float.toString(diffFiY);
             difffiY.setText(txt);
         }
 
         else if(initY>finalY)
         {
-            TextView diffinY = (TextView)findViewById(R.id.dxyIn);
+            TextView diffinY = (TextView)findViewById(R.id.dY);
             String txt= Float.toString(diffInY);
             diffinY.setText(txt);
         }
